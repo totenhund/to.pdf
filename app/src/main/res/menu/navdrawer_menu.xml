@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_picture_as_pdf_24"
+        android:title="Create pdf" />
+    <item
+        android:icon="@drawable/ic_baseline_call_merge_24"
+        android:title="Merge pdfs" />
+    <item
+        android:id="@+id/fragmentUploadImage"
+        android:icon="@drawable/ic_baseline_text_format_24"
+        android:title="Recognize text" />
+    <item
+        android:icon="@drawable/ic_baseline_invert_colors_24"
+        android:title="Invert pdf" />
+    <item
+        android:icon="@drawable/ic_baseline_text_snippet_24"
+        android:title="Add text" />
+</menu>

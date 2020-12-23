@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.topdf.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_fragmentUploadImage2"
+            app:destination="@id/fragmentUploadImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUploadImage"
+        android:name="com.example.topdf.FragmentUploadImage"
+        android:label="FragmentUploadImage" >
+        <action
+            android:id="@+id/action_fragmentUploadImage_to_pdfDownloadFragment"
+            app:destination="@id/pdfDownloadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfDownloadFragment"
+        android:name="com.example.topdf.PdfDownloadFragment"
+        android:label="fragment_pdf_download"
+        tools:layout="@layout/fragment_pdf_download" />
+</navigation>
